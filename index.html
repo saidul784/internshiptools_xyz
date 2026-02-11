@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoHire | Job Hunting Automation</title>
+    <title>JobHunt</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <style>
@@ -383,10 +383,10 @@
         
         <!-- Hero Content -->
         <div class="container hero-content">
-            <h1>Automate Your Job Hunt with n8n</h1>
+            <h1>Automate Your Job Hunt with Fusion03</h1>
             <p>Let our intelligent automation tool search, apply, and track job opportunities for you 24/7. Focus on preparing for interviews while we handle the applications.</p>
             <a href="https://hooks.n8n.cloud/webhook/your-webhook-id" class="cta-button" id="automateBtn">
-                <i class="fas fa-bolt"></i> Start Automating Now
+                <i class="fas fa-bolt"></i> Click Here
             </a>
         </div>
     </section>
@@ -401,22 +401,9 @@
                         <i class="fas fa-search"></i>
                     </div>
                     <h3>Smart Job Search</h3>
-                    <p>Our n8n workflows scan hundreds of job boards and company career pages to find the perfect opportunities for you.</p>
+                    <p>We scan hundreds of job boards and company career pages to find the perfect opportunities for you.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-file-upload"></i>
-                    </div>
-                    <h3>Auto Application</h3>
-                    <p>Automatically fill out applications and submit your resume tailored to each job description requirements.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Progress Tracking</h3>
-                    <p>Monitor application status, response rates, and interview invitations from a single dashboard.</p>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -424,8 +411,17 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>© 2023 AutoHire. Job hunting automation powered by n8n.</p>
-            <p>All your data is processed securely and never shared with third parties.</p>
+          <footer class="footer">
+  <p>
+    © <span id="year"></span> JobHunt 
+    | Built by Shahidul Islam Noyon
+  </p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
         </div>
     </footer>
 
