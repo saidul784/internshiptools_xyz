@@ -18,6 +18,45 @@
             --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             --transition: all 0.3s ease;
         }
+        .animated-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 36px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #8a2be2, #ff00ff);
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.7);
+  position: relative;
+  overflow: hidden;
+  animation: pulse 2s infinite;
+  transition: transform 0.2s ease;
+}
+
+.animated-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.9);
+}
+
+.animated-btn i {
+  margin-right: 8px;
+}
+
+/* Glow animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+  }
+}
+
 
         .dark-theme {
             --primary: #5a6ff0;
@@ -387,7 +426,7 @@
             <h1>Automate Your Job Hunt with Fusion03</h1>
             <p>Let our intelligent automation tool search, apply, and track job opportunities for you 24/7. Focus on preparing for interviews while we handle the applications.</p>
             
-               <a href="http://localhost:5678/form/a2a27239-ade7-4aac-be9d-005b9943cc01">
+               <a href="http://localhost:5678/form/a2a27239-ade7-4aac-be9d-005b9943cc01" class ="animated-btn">
                 <i class="fas fa-bolt"></i> Click Here
                </a>
 
