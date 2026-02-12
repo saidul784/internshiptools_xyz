@@ -425,7 +425,13 @@
         <div class="container hero-content">
             <h1>Automate Your Job Hunt with Us</h1>
             <p>Let our intelligent automation tool search, apply, and track job opportunities for you 24/7. Focus on preparing for interviews while we handle the applications.</p>
-            
+            <form action="http://localhost:5678/webhook/external_form" method="POST">
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="role" placeholder="Role" required>
+  <button type="submit">Submit</button>
+</form>
+
                <a href="http://localhost:5678/form/a2a27239-ade7-4aac-be9d-005b9943cc01" class ="animated-btn">
                 <i class="fas fa-bolt"></i> Click Here
                </a>
