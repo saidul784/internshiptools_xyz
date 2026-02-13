@@ -34,6 +34,39 @@
   animation: pulse 2s infinite;
   transition: transform 0.2s ease;
 }
+        .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(67, 97, 238, 0.4);
+}
+
 
 .animated-btn:hover {
   transform: scale(1.08);
@@ -459,6 +492,18 @@
     © <span id="year"></span> JobHunt 
     | Built by Shahidul Islam Noyon
   </p>
+              
+    <div class="social-icons">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/yourprofile" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:yourmail@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
 </footer>
 
 <script>
